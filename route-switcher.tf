@@ -1,5 +1,5 @@
 module "route_switcher" {
-  source    = "git@github.com:yandex-cloud-examples/yc-route-switcher.git"
+  source    = "github.com/yandex-cloud-examples/yc-route-switcher"
   start_module          = false
   folder_id = yandex_resourcemanager_folder.folder[0].id
   route_table_folder_list = yandex_resourcemanager_folder.folder.*.id
